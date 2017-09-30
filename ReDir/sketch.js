@@ -11,5 +11,5 @@ function setup() {
 }
 
 function ReDir() {
-  window.location.href = "http://localhost:3000/" + input.value();
+  window.location.href = "http://osnizle.github.io/" + input.value();
 }

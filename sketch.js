@@ -13,8 +13,8 @@ function setup() {
 
 function checkPassword() {
   if (input.value() == password) {
-    window.location.href = "http://localhost:3000/ReDir";
+    window.location.href = "http://osnizle.github.io/ReDir";
   } else {
-    window.location.href = "http://stackoverflow.com";
+    window.location.href = "http://osnizle.github.io/WPass";
   }
 }
