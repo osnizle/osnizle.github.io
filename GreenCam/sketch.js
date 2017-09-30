@@ -1,14 +1,14 @@
 /* Code made by Aiden Onstott/Osnott
 DO NOT COPY WITHOUT CREDIT PLEASE!!! */
-var cSize = 7;
+var cSize = 5;
 var slider;
 var cam;
 function setup() {
   cam = createCapture(VIDEO);
-  slider = createSlider(0, 688, 0);
-  createCanvas(cam.width, cam.height);
+  slider = createSlider(0, 688, 300);
+  createCanvas(cam.width * 2.5, cam.height * 2.5);
   cam.size(width/cSize, height/cSize);
-  cam.hide();
+  // cam.hide();
 }
 function draw() {
   background(0);
