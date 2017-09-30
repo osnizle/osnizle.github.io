@@ -4,9 +4,9 @@ var cSize = 7;
 var slider;
 var cam;
 function setup() {
-  createCanvas(640, 480);
   cam = createCapture(VIDEO);
   slider = createSlider(0, 688, 0);
+  createCanvas(cam.width, cam.height);
   cam.size(width/cSize, height/cSize);
   cam.hide();
 }
