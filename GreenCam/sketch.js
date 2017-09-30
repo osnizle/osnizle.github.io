@@ -5,7 +5,7 @@ var cSlider;
 var cam;
 function setup() {
   cam = createCapture(VIDEO);
-  cSize = createSlider(0, 20, 16)
+  cSize = createSlider(6, 20, 16)
   cSlider = createSlider(0, 688, 300);
   createCanvas(cam.width * 2.5, cam.height * 2.5);
   cam.size(width/cSize.value(), height/cSize.value());
