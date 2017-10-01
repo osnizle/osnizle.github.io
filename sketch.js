@@ -2,7 +2,6 @@
 DO NOT COPY WITHOUT CREDIT PLEASE!!! */
 var input;
 var button;
-var password = "OsnottIsCool!";
 
 function setup() {
   noCanvas();
