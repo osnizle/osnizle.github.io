@@ -1,6 +1,6 @@
 /* Code made by Aiden Onstott/Osnott
 DO NOT COPY WITHOUT CREDIT PLEASE!!! */
-var cSize = 8;
+var cSize = 5;
 var cSlider;
 var cam;
 function setup() {
@@ -15,8 +15,8 @@ function draw() {
   cam.loadPixels();
   cam.size(width/cSize, height/cSize);
   // loadPixels();
-  for (var x = 0; x < cam.width + 1; x++) {
-    for (var y = 0; y < cam.height + 1; y++) {
+  for (var x = 0; x < cam.width; x++) {
+    for (var y = 0; y < cam.height; y++) {
       var index = (x + y * cam.width)*4;
       var r = cam.pixels[index+0];
       var g = cam.pixels[index+1];
