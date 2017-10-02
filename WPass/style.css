@@ -1,7 +1,32 @@
-input {
-  margin: 100px;
+body {
+  background-color: #353535;
 }
 
-button {
-  margin: 50px;
+h1 {
+  text-align: center;
+  font: 5em "Open Sans", sans-serif;
+}
+
+.button {
+  transform:scale(0.8);
+  border-radius: 75px;
+  background-color: #565656;
+  margin-left: 45%;
+  margin-right: 45%;
+  transition: 250ms ease-in-out;
+}
+
+.button:hover {
+  background-color: #727272;
+  border-radius: 20px;
+  transform:scale(1);
+  margin-left: 45%;
+  margin-right: 45%;
+}
+
+
+.buttontext {
+  padding: 5px;
+  text-align: center;
+  font: 1em "Open Sans", sans-serif;
 }
