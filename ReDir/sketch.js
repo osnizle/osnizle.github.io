@@ -7,7 +7,7 @@ function setup() {
 }
 
 function ReDir() {
-  window.location.href = "http://osnizle.github.io/" + input[0].value;
+  window.location.href = "http://osnizle.github.io/ReDir/" + input[0].value;
 }
 
 function draw() {
