@@ -21,7 +21,7 @@ h1 {
   background-color: #565656;
   margin-left: 45%;
   margin-right: 45%;
-  transition: 250ms ease-in-out;
+  transition: 250ms cubic-bezier(0.4, 0, 0, 1.71);
 }
 
 .button:hover {
@@ -31,7 +31,6 @@ h1 {
   margin-left: 45%;
   margin-right: 45%;
 }
-
 
 .buttontext {
   padding: 5px;

@@ -1,0 +1,9 @@
+body {
+  background-color: #353535;
+  overflow: hidden;
+}
+
+input {
+  color: rgb(57, 57, 57);
+  background-color: rgb(57, 57, 57);
+}
