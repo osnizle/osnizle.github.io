@@ -12,7 +12,7 @@ function ReDir() {
 }
 
 function draw() {
-  if (input[0].value == "GreenCam" || input[0].value == "DiffAlg" || input[0].value == "DPage" || input[0].value == "Clock") {
+  if (input[0].value == "GreenCam" || input[0].value == "DiffAlg" || input[0].value == "DPage" || input[0].value == "Clock" || input[0].value == "RandBubb") {
     input[0].style = 'border-color: #56f747'
     button[0].style = 'color: rgb(0)'
   } else {
