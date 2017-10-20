@@ -8,10 +8,12 @@ recognition.lang = 'en-US';
 recognition.interimResults = false;
 recognition.maxAlternatives = 5;
 recognition.start();
-
+var voice;
 var buttonVisible = false;
+var milis;
 
 function setup() {
+  voice = new p5.Speech(); // speech synthesis object
   createCanvas(windowWidth, windowHeight);
   textAlign(CENTER, CENTER);
   rectMode(CENTER);
@@ -43,6 +45,7 @@ recognition.onresult = function(event) {
     // console.log(event.results[0][0].confidence);
   }
   text(output, width/2, height/2);
+  voice.speak(output);
   button();
   recognition.stop();
 }
@@ -50,12 +53,14 @@ recognition.onresult = function(event) {
 recognition.onnomatch = function() {
   background(53);
   text("Couldn't recognize speech...", width/2, height/2);
+  voice.speak('Couldn\'t recognize speech...');
 }
 
 recognition.onerror = function(event) {
   background(53);
   textSize(50);
   text("Speech recognition error detected: " + event.error, width/2, height/2);
+  voice.speak('Speech recognition error detected: ' + event.error);
   button();
   recognition.stop();
 }
@@ -64,6 +69,7 @@ recognition.onspeechend = function(event) {
   background(53);
   textSize(100);
   text("Processing...", width/2, height/2);
+  milis = millis();
 }
 
 function button() {
@@ -80,9 +86,9 @@ function mouseClicked() {
   if (buttonVisible) {
     if (dist(mouseX, mouseY, width/8*6.6, height/8*6.6) < 151) {
       background(53);
-      recognition.start();
       textSize(100);
       text("Say something!", width/2, height/2);
+      recognition.start();
     }
   }
 }
