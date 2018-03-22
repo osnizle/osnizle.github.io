@@ -4,20 +4,33 @@
     <meta charset="utf-8">
     <title>How Does This Work?</title>
     <link rel="stylesheet" type="text/css" href="style2.css">
-    <script src="sketch2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
+    <video class="video-element" id="video" autoplay align="middle">
+      <source src="HowDoesAIWork.mp4" type="video/mp4">
+      If you can see this text, find Aiden Onstott immediately.
+    </video>
     <p class="reader-text">
-      This image regocnition AI is called SqueezeNet, a free AI that anyone
-      could use. I programmed a button to go through a list of images and the
-      AI will try to figure out what they are. SqueezeNet uses another peice of code
-      called deeplearn. Google made deeplarn and deeplearn is free to use for anyone.
-      Look to the right and view the video to learn more information.
+      Cloudsight actually takes longer than most other image recognition
+      AIs, according to https://www.topbots.com/chihuahua-muffin-searching-best-computer-vision-api/.
+      It takes, on average, about 13 seconds longer than Google's Cloud Vision
+      and 12 seconds faster than Microsoft Computer Vision. Cloudsight also just returns
+      a phrase, which can be useful in certain situations, but "tags" are better
+      in some cases. In addition, Google's AI returns 9 "tags" on average, while Microsoft's
+      AI returns 2 less, according to the website seen above.
     </p>
     <div class="button">
       <p class="buttontext" onclick="goBack();">
         Go Back
       </p>
     </div>
+    <div class="ruthere" id="are-you-there">
+      <p class="reader-text">
+        Are you still there? If you don't respond, we will go back
+        to the other window.
+      </p>
+    </div>
+    <script src="sketch2.js"></script>
   </body>
 </html>
