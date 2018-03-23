@@ -160,8 +160,8 @@ $('#cat').on('load', function() {
 	infer(catImage);
 });
 
-
-
+// Prevent right click
+document.addEventListener('contextmenu', event => event.preventDefault());
 
 
 

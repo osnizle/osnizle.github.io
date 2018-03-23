@@ -1,6 +1,10 @@
 function goBack() {
   window.location.href = window.location.href.replace("how-does-it-work.html", " ");
 }
+
+function goSources() {
+  window.location.href = window.location.href.replace("how-does-it-work.html", "sources.html");
+}
 var idleTime = 0;
 document.getElementById('video').onended = function() {
   console.log("Finnished Video");
@@ -25,3 +29,6 @@ function timerIncrement() {
     $(".ruthere").css("display", "block");
   }
 }
+
+//Prevent right click
+document.addEventListener('contextmenu', event => event.preventDefault());
